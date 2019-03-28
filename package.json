@@ -1,0 +1,14 @@
+{
+  "name": "project-demo2",
+  "version": "1.0.0",
+  "description": "Project Demo part 2",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Kevin Lobos",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^4.0.8"
+  }
+}

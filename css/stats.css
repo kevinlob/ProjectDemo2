@@ -1,0 +1,27 @@
+body{
+  background: #999;
+  color: black;
+  font-size: 36px;
+  font-family:'Roboto', sans-serif;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+.container{
+  font-size: 50px;
+  text-align: center;
+  margin-top: 280px;
+}
+#bt{
+  color: blue;
+  padding-bottom: 15px;
+}
+#rt{
+  padding-top:15px;
+  color: rgb(204, 22, 22);
+}
+@keyframes fadeIn{
+  0%{opacity: 0.0;}
+  100%{opacity: 1;}
+  
+}
