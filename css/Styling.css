@@ -52,6 +52,129 @@
   text-align: center;
   animation: fadeIn 2s; 
 }
+
+#container{
+  display: none;
+}
+.guess {
+  background:#353f54;
+  animation: backwards 4s infinite;
+  font-size: 36px;
+  border: none;
+  color: white;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  border-bottom: solid 2px white;
+
+}
+.guess::placeholder {
+  color: #dddddd;
+}
+.table {
+  margin: auto;
+  margin-top: 2%;
+  border-spacing: 100px 20px;
+}
+
+.pictures {
+  border: solid 4px rgb(65, 64, 64);
+  background: white;
+  border-spacing: 5em;
+}
+#logo{
+  position: absolute;
+  top:0;
+  left:15px;
+  height: 100px;
+  display: none;
+}
+#logo:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+#submit {
+  font-size: 28px;
+  font-family: 'Roboto', sans-serif;
+  background: greenyellow;
+  border: solid 2px green;
+  border-radius: 20px;
+}
+#submit:hover {
+  background-color: green;
+  border: solid 2px black;
+  cursor: pointer;
+}
+#clear {
+  font-size: 28px;
+  font-family: 'Roboto', sans-serif;
+  background: rgb(255, 22, 22);
+  border: solid 2px rgb(167, 13, 13);
+  border-radius: 20px;
+}
+#clear:hover {
+  background: rgb(167, 13, 13);
+  border: solid 2px black;
+  cursor: pointer;
+}
+.close {
+  color: white;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+}
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+.Image {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.7);
+
+}
+.Image-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+.Image-content {
+  animation-name: zoomIn;
+  animation-duration: .5s;
+}
+.photos {
+  height: 220px;
+  width: 220px;
+}
+.photos:hover {
+  opacity: .7;
+}
+.gameName {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+}
+.close{
+  font-size: 40px;
+}
+#score{
+  position: absolute;
+  top:0;
+  right:0;
+  font-size: 20px;
+}
+
 @keyframes myanimation {
   0%{background-color: #353f54;}
 
@@ -65,6 +188,21 @@
   45%{background-color: #2a7d82;}
 
   100%{background-color: #353f54;}
+}
+@keyframes backwards {
+  0%{background-color:#2a7d82;}
+
+  45%{background-color: #353f54;}
+  
+  100%{background-color: #2a7d82;}
+}
+@keyframes zoomIn {
+  from {
+      transform: scale(0)
+  }
+  to {
+      transform: scale(1)
+  }
 }
 @keyframes fadeIn{
   0%{opacity: .1;}

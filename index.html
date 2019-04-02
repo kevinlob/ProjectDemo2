@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="script/index.js"></script>
+    <script src="script/rounds.js"></script>
 
     <title>4 Pictures One Word</title>
 </head>
@@ -27,6 +28,48 @@
     </div>
     <div class="singleplayermodepage" style="display: none;" id="singleplayermodepage">
         <p class="text" id="welcome"></p>
+    </div>
+    <div id="container">
+        <img src="img/logo.png" alt=logo id="logo">
+        <h1 class="gameName">Whats the Word?</h1>
+        <table class="table">
+            <tr>
+                <th class="pictures"><img src="img/round 1/image1.jpg" class="photos" id="photo1"></th>
+                <th class="pictures"><img src="img/round 1/image2.jpg" class="photos" id="photo2"></th>
+            </tr>
+            <tr>
+                <th class="pictures"><img src="img/round 1/image3.jpg" class="photos" id="photo3"></th>
+                <th class="pictures"><img src="img/round 1/image4.jpg" class="photos" id="photo4"></th>                
+            </tr>
+        </table>
+        <div class="form">
+            <input id="guess" class="guess" placeholder="Enter guess here!">
+            <button id="submit">
+                Submit
+            </button>
+            <button id="clear">
+                Clear
+            </button>
+        </div>
+        <div id="Image1" class="Image">
+            <span class="close">&times;</span>
+            <img class="Image-content" id="img1">
+        </div>
+        
+        <div id="Image2" class="Image">
+            <span class="close">&times;</span>
+            <img class="Image-content" id="img2">
+        </div>
+        
+        <div id="Image3" class="Image">
+            <span class="close">&times;</span>
+            <img class="Image-content" id="img3">
+        </div>
+        <div id="Image4" class="Image">
+            <span class="close">&times;</span>
+            <img class="Image-content" id="img4">
+        </div>
+        <div id="score">Score: 0</div>
     </div>
 </body>
 
