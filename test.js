@@ -1,3 +1,4 @@
+
 function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
 }
@@ -160,7 +161,7 @@ var current_Round = round_1
 
 var assert = require('assert');
 describe('getting the Random int', function() {
-    it('should return correct number', function(){
+    it('should return the number of a round within the range', function(){
         getRandomInt(20);
         var isValid = getRandomInt(20);
         var truth = "is Valid";
@@ -211,6 +212,30 @@ describe('checking if the functions pictures are aligned with the right word', f
         }
         assert.equal = ('is correct', truth)
     });
+    it('should say if the empty string were aligned w picture that it would be wrong', function(){
+        var guess = '';
+        var correct = round_1.answer;
+        var truth = 'is correct';
+        if (guess === correct) {
+            truth = 'is correct';
+        }
+        else {
+            truth = 'is incorrect';
+        }
+        assert.equal = ('is incorrect', truth)
+    });
+    it('should say if the wrong guess were aligned w picture that it would be wrong', function(){
+        var guess = 'bunny';
+        var correct = round_1.answer;
+        var truth = 'is correct';
+        if (guess === correct) {
+            truth = 'is correct';
+        }
+        else {
+            truth = 'is incorrect';
+        }
+        assert.equal = ('is incorrect', truth)
+    });
     it('should say if guess is right', function(){
         var guess = 'Train';
         var correct = round_2.answer;
@@ -222,6 +247,29 @@ describe('checking if the functions pictures are aligned with the right word', f
             truth = 'is incorrect';
         }
         assert.equal = ('is correct', truth)
+    });it('should say if the empty string were aligned w picture that it would be wrong', function(){
+        var guess = '';
+        var correct = round_2.answer;
+        var truth = 'is correct';
+        if (guess === correct) {
+            truth = 'is correct';
+        }
+        else {
+            truth = 'is incorrect';
+        }
+        assert.equal = ('is incorrect', truth)
+    });
+    it('should say if the wrong guess were aligned w picture that it would be wrong', function(){
+        var guess = 'bunny';
+        var correct = round_2.answer;
+        var truth = 'is correct';
+        if (guess === correct) {
+            truth = 'is correct';
+        }
+        else {
+            truth = 'is incorrect';
+        }
+        assert.equal = ('is incorrect', truth)
     });
     it('should say if guess is right', function(){
         var guess = 'Heavy';
@@ -235,6 +283,30 @@ describe('checking if the functions pictures are aligned with the right word', f
         }
         assert.equal = ('is correct', truth)
     });
+    it('should say if the empty string were aligned w picture that it would be wrong', function(){
+        var guess = '';
+        var correct = round_3.answer;
+        var truth = 'is correct';
+        if (guess === correct) {
+            truth = 'is correct';
+        }
+        else {
+            truth = 'is incorrect';
+        }
+        assert.equal = ('is incorrect', truth)
+    });
+    it('should say if the wrong guess were aligned w picture that it would be wrong', function(){
+        var guess = 'bunny';
+        var correct = round_3.answer;
+        var truth = 'is correct';
+        if (guess === correct) {
+            truth = 'is correct';
+        }
+        else {
+            truth = 'is incorrect';
+        }
+        assert.equal = ('is incorrect', truth)
+    });
     it('should say if guess is right', function(){
         var guess = 'Trip';
         var correct = round_4.answer;
@@ -246,6 +318,30 @@ describe('checking if the functions pictures are aligned with the right word', f
             truth = 'is incorrect';
         }
         assert.equal = ('is correct', truth)
+    });
+    it('should say if the empty string were aligned w picture that it would be wrong', function(){
+        var guess = '';
+        var correct = round_4.answer;
+        var truth = 'is correct';
+        if (guess === correct) {
+            truth = 'is correct';
+        }
+        else {
+            truth = 'is incorrect';
+        }
+        assert.equal = ('is incorrect', truth)
+    });
+    it('should say if the wrong guess were aligned w picture that it would be wrong', function(){
+        var guess = 'bunny';
+        var correct = round_4.answer;
+        var truth = 'is correct';
+        if (guess === correct) {
+            truth = 'is correct';
+        }
+        else {
+            truth = 'is incorrect';
+        }
+        assert.equal = ('is incorrect', truth)
     });
     it('should say if guess is right', function(){
         var guess = 'Bass';
@@ -259,6 +355,30 @@ describe('checking if the functions pictures are aligned with the right word', f
         }
         assert.equal = ('is correct', truth)
     });
+    it('should say if the empty string were aligned w picture that it would be wrong', function(){
+        var guess = '';
+        var correct = round_5.answer;
+        var truth = 'is correct';
+        if (guess === correct) {
+            truth = 'is correct';
+        }
+        else {
+            truth = 'is incorrect';
+        }
+        assert.equal = ('is incorrect', truth)
+    });
+    it('should say if the wrong guess were aligned w picture that it would be wrong', function(){
+        var guess = 'bunny';
+        var correct = round_5.answer;
+        var truth = 'is correct';
+        if (guess === correct) {
+            truth = 'is correct';
+        }
+        else {
+            truth = 'is incorrect';
+        }
+        assert.equal = ('is incorrect', truth)
+    });
     it('should say if guess is right', function(){
         var guess = 'Peace';
         var correct = round_6.answer;
@@ -270,6 +390,30 @@ describe('checking if the functions pictures are aligned with the right word', f
             truth = 'is incorrect';
         }
         assert.equal = ('is correct', truth)
+    });
+    it('should say if the empty string were aligned w picture that it would be wrong', function(){
+        var guess = '';
+        var correct = round_6.answer;
+        var truth = 'is correct';
+        if (guess === correct) {
+            truth = 'is correct';
+        }
+        else {
+            truth = 'is incorrect';
+        }
+        assert.equal = ('is incorrect', truth)
+    });
+    it('should say if the wrong guess were aligned w picture that it would be wrong', function(){
+        var guess = 'bunny';
+        var correct = round_6.answer;
+        var truth = 'is correct';
+        if (guess === correct) {
+            truth = 'is correct';
+        }
+        else {
+            truth = 'is incorrect';
+        }
+        assert.equal = ('is incorrect', truth)
     });
     it('should say if guess is right', function(){
         var guess = 'swing';
@@ -283,6 +427,30 @@ describe('checking if the functions pictures are aligned with the right word', f
         }
         assert.equal = ('is correct', truth)
     });
+    it('should say if the empty string were aligned w picture that it would be wrong', function(){
+        var guess = '';
+        var correct = round_7.answer;
+        var truth = 'is correct';
+        if (guess === correct) {
+            truth = 'is correct';
+        }
+        else {
+            truth = 'is incorrect';
+        }
+        assert.equal = ('is incorrect', truth)
+    });
+    it('should say if the wrong guess were aligned w picture that it would be wrong', function(){
+        var guess = 'bunny';
+        var correct = round_7.answer;
+        var truth = 'is correct';
+        if (guess === correct) {
+            truth = 'is correct';
+        }
+        else {
+            truth = 'is incorrect';
+        }
+        assert.equal = ('is incorrect', truth)
+    });
     it('should say if guess is right', function(){
         var guess = 'record';
         var correct = round_8.answer;
@@ -294,6 +462,30 @@ describe('checking if the functions pictures are aligned with the right word', f
             truth = 'is incorrect';
         }
         assert.equal = ('is correct', truth)
+    });
+    it('should say if the empty string were aligned w picture that it would be wrong', function(){
+        var guess = '';
+        var correct = round_8.answer;
+        var truth = 'is correct';
+        if (guess === correct) {
+            truth = 'is correct';
+        }
+        else {
+            truth = 'is incorrect';
+        }
+        assert.equal = ('is incorrect', truth)
+    });
+    it('should say if the wrong guess were aligned w picture that it would be wrong', function(){
+        var guess = 'bunny';
+        var correct = round_8.answer;
+        var truth = 'is correct';
+        if (guess === correct) {
+            truth = 'is correct';
+        }
+        else {
+            truth = 'is incorrect';
+        }
+        assert.equal = ('is incorrect', truth)
     });
     it('should say if guess is right', function(){
         var guess = 'Marble';
@@ -307,6 +499,30 @@ describe('checking if the functions pictures are aligned with the right word', f
         }
         assert.equal = ('is correct', truth)
     });
+    it('should say if the empty string were aligned w picture that it would be wrong', function(){
+        var guess = '';
+        var correct = round_9.answer;
+        var truth = 'is correct';
+        if (guess === correct) {
+            truth = 'is correct';
+        }
+        else {
+            truth = 'is incorrect';
+        }
+        assert.equal = ('is incorrect', truth)
+    });
+    it('should say if the wrong guess were aligned w picture that it would be wrong', function(){
+        var guess = 'bunny';
+        var correct = round_9.answer;
+        var truth = 'is correct';
+        if (guess === correct) {
+            truth = 'is correct';
+        }
+        else {
+            truth = 'is incorrect';
+        }
+        assert.equal = ('is incorrect', truth)
+    });
     it('should say if guess is right', function(){
         var guess = 'slide';
         var correct = round_10.answer;
@@ -318,6 +534,30 @@ describe('checking if the functions pictures are aligned with the right word', f
             truth = 'is incorrect';
         }
         assert.equal = ('is correct', truth)
+    });
+    it('should say if the empty string were aligned w picture that it would be wrong', function(){
+        var guess = '';
+        var correct = round_10.answer;
+        var truth = 'is correct';
+        if (guess === correct) {
+            truth = 'is correct';
+        }
+        else {
+            truth = 'is incorrect';
+        }
+        assert.equal = ('is incorrect', truth)
+    });
+    it('should say if the wrong guess were aligned w picture that it would be wrong', function(){
+        var guess = 'bunny';
+        var correct = round_10.answer;
+        var truth = 'is correct';
+        if (guess === correct) {
+            truth = 'is correct';
+        }
+        else {
+            truth = 'is incorrect';
+        }
+        assert.equal = ('is incorrect', truth)
     });
     it('should say if guess is right', function(){
         var guess = 'braces';
@@ -331,6 +571,30 @@ describe('checking if the functions pictures are aligned with the right word', f
         }
         assert.equal = ('is correct', truth)
     });
+    it('should say if the empty string were aligned w picture that it would be wrong', function(){
+        var guess = '';
+        var correct = round_11.answer;
+        var truth = 'is correct';
+        if (guess === correct) {
+            truth = 'is correct';
+        }
+        else {
+            truth = 'is incorrect';
+        }
+        assert.equal = ('is incorrect', truth)
+    });
+    it('should say if the wrong guess were aligned w picture that it would be wrong', function(){
+        var guess = 'bunny';
+        var correct = round_11.answer;
+        var truth = 'is correct';
+        if (guess === correct) {
+            truth = 'is correct';
+        }
+        else {
+            truth = 'is incorrect';
+        }
+        assert.equal = ('is incorrect', truth)
+    });
     it('should say if guess is right', function(){
         var guess = 'organ';
         var correct = round_12.answer;
@@ -342,6 +606,30 @@ describe('checking if the functions pictures are aligned with the right word', f
             truth = 'is incorrect';
         }
         assert.equal = ('is correct', truth)
+    });
+    it('should say if the empty string were aligned w picture that it would be wrong', function(){
+        var guess = '';
+        var correct = round_12.answer;
+        var truth = 'is correct';
+        if (guess === correct) {
+            truth = 'is correct';
+        }
+        else {
+            truth = 'is incorrect';
+        }
+        assert.equal = ('is incorrect', truth)
+    });
+    it('should say if the wrong guess were aligned w picture that it would be wrong', function(){
+        var guess = 'bunny';
+        var correct = round_12.answer;
+        var truth = 'is correct';
+        if (guess === correct) {
+            truth = 'is correct';
+        }
+        else {
+            truth = 'is incorrect';
+        }
+        assert.equal = ('is incorrect', truth)
     });
     it('should say if guess is right', function(){
         var guess = 'fly';
@@ -355,6 +643,30 @@ describe('checking if the functions pictures are aligned with the right word', f
         }
         assert.equal = ('is correct', truth)
     });
+    it('should say if the empty string were aligned w picture that it would be wrong', function(){
+        var guess = '';
+        var correct = round_13.answer;
+        var truth = 'is correct';
+        if (guess === correct) {
+            truth = 'is correct';
+        }
+        else {
+            truth = 'is incorrect';
+        }
+        assert.equal = ('is incorrect', truth)
+    });
+    it('should say if the wrong guess were aligned w picture that it would be wrong', function(){
+        var guess = 'bunny';
+        var correct = round_13.answer;
+        var truth = 'is correct';
+        if (guess === correct) {
+            truth = 'is correct';
+        }
+        else {
+            truth = 'is incorrect';
+        }
+        assert.equal = ('is incorrect', truth)
+    });
     it('should say if guess is right', function(){
         var guess = 'smash';
         var correct = round_14.answer;
@@ -366,6 +678,30 @@ describe('checking if the functions pictures are aligned with the right word', f
             truth = 'is incorrect';
         }
         assert.equal = ('is correct', truth)
+    });
+    it('should say if the empty string were aligned w picture that it would be wrong', function(){
+        var guess = '';
+        var correct = round_14.answer;
+        var truth = 'is correct';
+        if (guess === correct) {
+            truth = 'is correct';
+        }
+        else {
+            truth = 'is incorrect';
+        }
+        assert.equal = ('is incorrect', truth)
+    });
+    it('should say if the wrong guess were aligned w picture that it would be wrong', function(){
+        var guess = 'bunny';
+        var correct = round_14.answer;
+        var truth = 'is correct';
+        if (guess === correct) {
+            truth = 'is correct';
+        }
+        else {
+            truth = 'is incorrect';
+        }
+        assert.equal = ('is incorrect', truth)
     });
     it('should say if guess is right', function(){
         var guess = 'adder';
@@ -379,6 +715,30 @@ describe('checking if the functions pictures are aligned with the right word', f
         }
         assert.equal = ('is correct', truth)
     });
+    it('should say if the empty string were aligned w picture that it would be wrong', function(){
+        var guess = '';
+        var correct = round_15.answer;
+        var truth = 'is correct';
+        if (guess === correct) {
+            truth = 'is correct';
+        }
+        else {
+            truth = 'is incorrect';
+        }
+        assert.equal = ('is incorrect', truth)
+    });
+    it('should say if the wrong guess were aligned w picture that it would be wrong', function(){
+        var guess = 'bunny';
+        var correct = round_15.answer;
+        var truth = 'is correct';
+        if (guess === correct) {
+            truth = 'is correct';
+        }
+        else {
+            truth = 'is incorrect';
+        }
+        assert.equal = ('is incorrect', truth)
+    });
     it('should say if guess is right', function(){
         var guess = 'wedge';
         var correct = round_16.answer;
@@ -390,6 +750,30 @@ describe('checking if the functions pictures are aligned with the right word', f
             truth = 'is incorrect';
         }
         assert.equal = ('is correct', truth)
+    });
+    it('should say if the empty string were aligned w picture that it would be wrong', function(){
+        var guess = '';
+        var correct = round_16.answer;
+        var truth = 'is correct';
+        if (guess === correct) {
+            truth = 'is correct';
+        }
+        else {
+            truth = 'is incorrect';
+        }
+        assert.equal = ('is incorrect', truth)
+    });
+    it('should say if the wrong guess were aligned w picture that it would be wrong', function(){
+        var guess = 'bunny';
+        var correct = round_16.answer;
+        var truth = 'is correct';
+        if (guess === correct) {
+            truth = 'is correct';
+        }
+        else {
+            truth = 'is incorrect';
+        }
+        assert.equal = ('is incorrect', truth)
     });
     it('should say if guess is right', function(){
         var guess = 'fall';
@@ -403,6 +787,30 @@ describe('checking if the functions pictures are aligned with the right word', f
         }
         assert.equal = ('is correct', truth)
     });
+    it('should say if the empty string were aligned w picture that it would be wrong', function(){
+        var guess = '';
+        var correct = round_17.answer;
+        var truth = 'is correct';
+        if (guess === correct) {
+            truth = 'is correct';
+        }
+        else {
+            truth = 'is incorrect';
+        }
+        assert.equal = ('is incorrect', truth)
+    });
+    it('should say if the wrong guess were aligned w picture that it would be wrong', function(){
+        var guess = 'bunny';
+        var correct = round_17.answer;
+        var truth = 'is correct';
+        if (guess === correct) {
+            truth = 'is correct';
+        }
+        else {
+            truth = 'is incorrect';
+        }
+        assert.equal = ('is incorrect', truth)
+    });
     it('should say if guess is right', function(){
         var guess = 'flake';
         var correct = round_18.answer;
@@ -414,6 +822,30 @@ describe('checking if the functions pictures are aligned with the right word', f
             truth = 'is incorrect';
         }
         assert.equal = ('is correct', truth)
+    });
+    it('should say if the empty string were aligned w picture that it would be wrong', function(){
+        var guess = '';
+        var correct = round_18.answer;
+        var truth = 'is correct';
+        if (guess === correct) {
+            truth = 'is correct';
+        }
+        else {
+            truth = 'is incorrect';
+        }
+        assert.equal = ('is incorrect', truth)
+    });
+    it('should say if the wrong guess were aligned w picture that it would be wrong', function(){
+        var guess = 'bunny';
+        var correct = round_18.answer;
+        var truth = 'is correct';
+        if (guess === correct) {
+            truth = 'is correct';
+        }
+        else {
+            truth = 'is incorrect';
+        }
+        assert.equal = ('is incorrect', truth)
     });
     it('should say if guess is right', function(){
         var guess = 'ring';
@@ -427,6 +859,30 @@ describe('checking if the functions pictures are aligned with the right word', f
         }
         assert.equal = ('is correct', truth)
     });
+    it('should say if the empty string were aligned w picture that it would be wrong', function(){
+        var guess = '';
+        var correct = round_19.answer;
+        var truth = 'is correct';
+        if (guess === correct) {
+            truth = 'is correct';
+        }
+        else {
+            truth = 'is incorrect';
+        }
+        assert.equal = ('is incorrect', truth)
+    });
+    it('should say if the wrong guess were aligned w picture that it would be wrong', function(){
+        var guess = 'bunny';
+        var correct = round_19.answer;
+        var truth = 'is correct';
+        if (guess === correct) {
+            truth = 'is correct';
+        }
+        else {
+            truth = 'is incorrect';
+        }
+        assert.equal = ('is incorrect', truth)
+    });
     it('should say if guess is right', function(){
         var guess = 'skate';
         var correct = round_20.answer;
@@ -439,6 +895,572 @@ describe('checking if the functions pictures are aligned with the right word', f
         }
         assert.equal = ('is correct', truth)
     });
+    it('should say if the empty string were aligned w picture that it would be wrong', function(){
+        var guess = '';
+        var correct = round_20.answer;
+        var truth = 'is correct';
+        if (guess === correct) {
+            truth = 'is correct';
+        }
+        else {
+            truth = 'is incorrect';
+        }
+        assert.equal = ('is incorrect', truth)
+    });
+    it('should say if the wrong guess were aligned w picture that it would be wrong', function(){
+        var guess = 'bunny';
+        var correct = round_20.answer;
+        var truth = 'is correct';
+        if (guess === correct) {
+            truth = 'is correct';
+        }
+        else {
+            truth = 'is incorrect';
+        }
+        assert.equal = ('is incorrect', truth)
+    });
 
 });
+
+    describe('counting pictures', function() {
+        it('should return correct number of photos', function(){
+            var truth = true
+            if ((round_1['photo1']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            if ((round_1['photo2']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            if ((round_1['photo3']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }if ((round_1['photo4']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            assert.equal(true, truth);
+        });
+        it('should return correct number of photos', function(){
+            var truth = true
+            if ((round_2['photo1']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            if ((round_2['photo2']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            if ((round_2['photo3']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }if ((round_2['photo4']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            assert.equal(true, truth);
+        });
+        it('should return correct number of photos', function(){
+            var truth = true
+            if ((round_3['photo1']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            if ((round_3['photo2']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            if ((round_3['photo3']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }if ((round_3['photo4']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            assert.equal(true, truth);
+        });
+        it('should return correct number of photos', function(){
+            var truth = true
+            if ((round_4['photo1']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            if ((round_4['photo2']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            if ((round_4['photo3']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }if ((round_4['photo4']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            assert.equal(true, truth);
+        });
+        it('should return correct number of photos', function(){
+            var truth = true
+            if ((round_5['photo1']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            if ((round_5['photo2']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            if ((round_5['photo3']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }if ((round_5['photo4']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            assert.equal(true, truth);
+        }); it('should return correct number of photos', function(){
+            var truth = true
+            if ((round_6['photo1']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            if ((round_6['photo2']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            if ((round_6['photo3']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }if ((round_6['photo4']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            assert.equal(true, truth);
+        });
+        it('should return correct number of photos', function(){
+            var truth = true
+            if ((round_7['photo1']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            if ((round_7['photo2']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            if ((round_7['photo3']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }if ((round_7['photo4']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            assert.equal(true, truth);
+        }); it('should return correct number of photos', function(){
+            var truth = true
+            if ((round_8['photo1']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            if ((round_8['photo2']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            if ((round_8['photo3']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }if ((round_8['photo4']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            assert.equal(true, truth);
+        }); it('should return correct number of photos', function(){
+            var truth = true
+            if ((round_9['photo1']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            if ((round_9['photo2']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            if ((round_9['photo3']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }if ((round_9['photo4']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            assert.equal(true, truth);
+        });
+        it('should return correct number of photos', function(){
+            var truth = true
+            if ((round_10['photo1']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            if ((round_10['photo2']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            if ((round_10['photo3']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }if ((round_10['photo4']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            assert.equal(true, truth);
+        });
+        it('should return correct number of photos', function(){
+            var truth = true
+            if ((round_11['photo1']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            if ((round_11['photo2']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            if ((round_11['photo3']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }if ((round_11['photo4']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            assert.equal(true, truth);
+        });
+        it('should return correct number of photos', function(){
+            var truth = true
+            if ((round_12['photo1']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            if ((round_12['photo2']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            if ((round_12['photo3']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }if ((round_12['photo4']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            assert.equal(true, truth);
+        });
+        it('should return correct number of photos', function(){
+            var truth = true
+            if ((round_13['photo1']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            if ((round_13['photo2']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            if ((round_13['photo3']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }if ((round_13['photo4']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            assert.equal(true, truth);
+        });
+        it('should return correct number of photos', function(){
+            var truth = true
+            if ((round_14['photo1']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            if ((round_14['photo2']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            if ((round_14['photo3']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }if ((round_14['photo4']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            assert.equal(true, truth);
+        });
+        it('should return correct number of photos', function(){
+            var truth = true
+            if ((round_15['photo1']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            if ((round_15['photo2']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            if ((round_15['photo3']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }if ((round_15['photo4']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            assert.equal(true, truth);
+        });
+        it('should return correct number of photos', function(){
+            var truth = true
+            if ((round_16['photo1']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            if ((round_16['photo2']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            if ((round_16['photo3']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }if ((round_16['photo4']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            assert.equal(true, truth);
+        });
+        it('should return correct number of photos', function(){
+            var truth = true
+            if ((round_17['photo1']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            if ((round_17['photo2']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            if ((round_17['photo3']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }if ((round_17['photo4']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            assert.equal(true, truth);
+        });
+        it('should return correct number of photos', function(){
+            var truth = true
+            if ((round_18['photo1']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            if ((round_18['photo2']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            if ((round_18['photo3']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }if ((round_18['photo4']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            assert.equal(true, truth);
+        });
+        it('should return correct number of photos', function(){
+            var truth = true
+            if ((round_19['photo1']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            if ((round_19['photo2']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            if ((round_19['photo3']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }if ((round_19['photo4']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            assert.equal(true, truth);
+        });
+        it('should return correct number of photos', function(){
+            var truth = true
+            if ((round_20['photo1']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            if ((round_20['photo2']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            if ((round_20['photo3']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }if ((round_20['photo4']).includes('jpeg') > -1) {
+                truth = true
+            }
+            else {
+                truth = false
+            }
+            assert.equal(true, truth);
+        });
+    });
+
+
 
