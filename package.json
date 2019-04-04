@@ -4,7 +4,10 @@
   "description": "Project Demo part 2",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"4 Pics 1 Word\"",
+    "package-linux": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/icon.png --prune=true --out=release-builds"
   },
   "author": "Kevin Lobos",
   "license": "ISC",
@@ -13,6 +16,7 @@
   },
   "devDependencies": {
     "chai": "^4.2.0",
+    "electron-packager": "^13.1.1",
     "mocha": "^6.0.2"
   }
 }
