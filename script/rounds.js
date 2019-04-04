@@ -142,6 +142,6 @@ const round_20 = {
   answer: "skate"
 };
 
-
+var start_round = [round_1,round_2, round_3, round_4, round_5, round_6, round_7, round_8, round_9, round_10, round_11, round_12, round_13, round_14, round_15, round_16, round_17, round_18, round_19, round_20]
 var round = [round_1,round_2, round_3, round_4, round_5, round_6, round_7, round_8, round_9, round_10, round_11, round_12, round_13, round_14, round_15, round_16, round_17, round_18, round_19, round_20]
 var current_Round = round_1

@@ -1,9 +1,8 @@
 
 function doFirst() {
+  startGame()
   var button = document.getElementById('button');
-  // var button2 = document.getElementById('button2');
   button.addEventListener('click', getNameSingle, false);
-  // button2.addEventListener('click', getNameMult, false);
   var Image1 = document.getElementById('Image1');
   var Image2 = document.getElementById('Image2');
   var Image3 = document.getElementById('Image3');
@@ -43,16 +42,30 @@ function doFirst() {
     document.getElementById('guess').value = ""
   }
 
-  document.getElementById('submit').onclick = function(){
-    if(document.getElementById('guess').value.toLowerCase() == current_Round.answer.toLowerCase()){
+  document.getElementById('submit').onclick = function () {
+    if (document.getElementById('guess').value.toLowerCase() == current_Round.answer.toLowerCase()) {
       nextRound();
-      score = score+1
-      document.getElementById('score').innerHTML = "Score: "+ score
-      console.log(current_Round.answer)
-    }
-    else{
-      console.log("INCORRECT");
-      console.log(current_Round.answer)
+      document.getElementById('correctScreen').style.display = "block";
+      if (score + 1 >= 10) {
+        win()
+        score = 0
+        isWin = true;
+        document.getElementById('container').style.display = "none"
+      } else {
+        score = score + 1
+        document.getElementById('score').innerHTML = "Score: " + score
+      }
+    } else {
+      score = score - 1
+      document.getElementById('incorrectScreen').style.display = "block"
+      if (score < 0) {
+        lose();
+        score =0
+        isLose = true;
+        document.getElementById('container').style.display = "none"
+      } else {
+        document.getElementById('score').innerHTML = "Score: " + score
+      }
     }
   }
 
@@ -72,54 +85,18 @@ function getNameSingle() {
       time = time - 1;
     }
     if (time <= -3) {
-      document.getElementById('welcome').style.display = "none";
-      document.getElementById('container').style.display = "block";
-      document.getElementById('logo').style.display = "block";
-      document.getElementById('indexBody').style.animation = "backwards 4s infinite";
+
+      if (isWin == false && isLose == false) {
+        document.getElementById('welcome').style.display = "none";
+        document.getElementById('container').style.display = "block";
+        document.getElementById('logo').style.display = "block";
+        document.getElementById('indexBody').style.animation = "backwards 4s infinite";
+      }
     }
-  }, 1000), 10000);
+  }, 1000), 8000);
 }
-
-function TriggeredKey(e) {
-  var keycode;
-  if (window.event) keycode = window.event.keyCode;
-  if (window.event.keyCode == 13) return false;
-}
-
 window.addEventListener('load', doFirst, false);
 
-function zoom() {
-  Image1.style.display = "block";
-  document.getElementById('img1').src = this.src;
-}
-
-function zoom2() {
-  Image2.style.display = "block";
-  document.getElementById('img2').src = this.src;
-}
-
-function zoom3() {
-  Image3.style.display = "block"
-  document.getElementById('img3').src = this.src;
-}
-
-function zoom4() {
-  Image4.style.display = "block"
-  document.getElementById('img4').src = this.src
-}
-function getRandomInt(max) {
-  return Math.floor(Math.random() * Math.floor(max));
-}
-function nextRound(){
-  index = round.indexOf(current_Round)
-  round.splice(index, 1)
-  random = getRandomInt(round.length)
-  current_Round= round[random]
-  document.getElementById('guess').value = "";
-  document.getElementById('photo1').src = current_Round.photo1
-  document.getElementById('photo2').src = current_Round.photo2
-  document.getElementById('photo3').src = current_Round.photo3
-  document.getElementById('photo4').src = current_Round.photo4
-
-}
 var score = 0
+var isWin = false
+var isLose = false

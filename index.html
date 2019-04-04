@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="script/index.js"></script>
     <script src="script/rounds.js"></script>
+    <script src="script/functions.js"></script>
 
     <title>4 Pictures One Word</title>
 </head>
@@ -71,6 +72,16 @@
         </div>
         <div id="score">Score: 0</div>
     </div>
+    <div id="winScreen" style="display: none;">
+        <h1 id = "youWin"></h1>
+        <button onclick="reset()" class = "button"> Okay</button>
+    </div>
+    <div id="loseScreen" style="display: none;">
+        <h1 id="youLose"></h1>
+        <button onclick = "reset()" class ="button">Okay</button>
+    </div>
+    <div id="correctScreen" style = "display: none" onclick="hideCorrect()"><h1>Correct!</h1></div>
+    <div id="incorrectScreen" style = "display: none" onclick = "hideWrong()"><h1>Wrong!</h1></div>
 </body>
 
 </html>
